@@ -7,10 +7,10 @@ listener http:Listener httpDefaultListener = http:getDefaultListener();
 # Description.
 service /scan on httpDefaultListener {
     
-    resource function get list/[string customerID]() returns Scan[] {
+    resource function get list/[string customerCode]() returns Scan[] {
         do {
             return from Scan scan in Scans
-            where scan.customerCode == customerID
+            where scan.customerCode == customerCode
             select scan;
         } 
     }
