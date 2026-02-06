@@ -2,7 +2,8 @@
 
 
 type Scan readonly & record {|
-    string customerID;
+    string uID;
+    string customerCode;
     string scanType;
     string targetUrl;
     string scanName;
@@ -11,4 +12,4 @@ type Scan readonly & record {|
     string notificationEmail;
 |};
 
-table<Scan> key(customerID) Scans = table [];
+table<Scan> key(ID) Scans = table [];
