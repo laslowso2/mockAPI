@@ -12,4 +12,4 @@ type Scan readonly & record {|
     string notificationEmail;
 |};
 
-table<Scan> key(ID) Scans = table [];
+table<Scan> key(uID) Scans = table [];
