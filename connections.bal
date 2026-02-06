@@ -1,0 +1,2 @@
+import ballerinax/rabbitmq;
+
