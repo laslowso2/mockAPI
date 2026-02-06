@@ -1,5 +1,5 @@
 
-type Tags string[];
+
 
 type Scan readonly & record {|
     string customerID;
@@ -9,7 +9,6 @@ type Scan readonly & record {|
     string priority;
     string scheduledTime;
     string notificationEmail;
-    Tags tags;
 |};
 
 table<Scan> key(customerID) Scans = table [];
